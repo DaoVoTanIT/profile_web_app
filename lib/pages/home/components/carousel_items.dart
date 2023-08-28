@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:my_portfolio/pages/experience/presentation/experience_section.dart';
 import 'package:my_portfolio/pages/home/components/animated_texts_componenets.dart';
+import 'package:my_portfolio/pages/home/components/download_button.dart';
 import 'package:my_portfolio/translations/export_lang.dart';
 import 'package:my_portfolio/utils/constants.dart';
 import 'package:my_portfolio/utils/screen_helper.dart';
@@ -85,7 +86,15 @@ List<CarouselItemModel> carouselItems(
                             fontSize: 15.0,
                             height: 1.0,
                           ),
-                        )
+                        ),
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 18.0,
+                    ),
+                    const Row(
+                      children: [
+                        DownloadButton(),
                       ],
                     ),
                     const SizedBox(
